@@ -1,0 +1,20 @@
+[ CICIDS 2018 dataset ]
+          ↓
+   [ Training Env ]
+    - Preprocess
+    - Train ML model
+    - Save model
+
+          ↓
+   [ Detection Pipeline ]
+    - Flow ingestion (batch/stream)
+    - ML model (FastAPI microservice)
+    - Threat intel enrichment (JSON/API)
+
+          ↓
+   [ Storage ]
+    - Elasticsearch (alerts + context)
+
+          ↓
+   [ Visualization ]
+    - Kibana dashboards (threat timeline, severity, intel context)
