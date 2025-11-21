@@ -20,12 +20,13 @@ The project contains:
 
 ## Dataset: CICIDS2018 
 
-- Training days used:
+Training days used:
 - 02-14-2018.csv
 - 02-15-2018.csv
 - 02-16-2018.csv
 - 02-21-2018.csv
 - 02-22-2018.csv
+  
 Testing and evaluation days:
 - 02-28-2018.csv
 - 03-01-2018.csv
