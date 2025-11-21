@@ -8,28 +8,28 @@ This project implements a machine learning–based Intrusion Detection System (I
 
 # Project Overview
 The project contains:
-*End-to-end ML pipeline for encrypted traffic detection
-*Data preprocessing and cleaning
-*Feature selection using permutation importance
-*Random Forest/XGBoost model training
-*SHAP explainability outputs
-*Export of predictions and explanations to Elasticsearch
-*Kibana dashboard for analysis and visualization
+* End-to-end ML pipeline for encrypted traffic detection
+* Data preprocessing and cleaning
+* Feature selection using permutation importance
+* Random Forest/XGBoost model training
+* SHAP explainability outputs
+* Export of predictions and explanations to Elasticsearch
+* Kibana dashboard for analysis and visualization
 
 ---
 
 ## Dataset: CICIDS2018 
 
-Training days used:
-02-14-2018.csv
-02-15-2018.csv
-02-16-2018.csv
-02-21-2018.csv
-02-22-2018.csv
+- Training days used:
+- 02-14-2018.csv
+- 02-15-2018.csv
+- 02-16-2018.csv
+- 02-21-2018.csv
+- 02-22-2018.csv
 Testing and evaluation days:
-02-28-2018.csv
-03-01-2018.csv
-03-02-2018.csv
+- 02-28-2018.csv
+- 03-01-2018.csv
+- 03-02-2018.csv
 
 ---
 
@@ -37,50 +37,37 @@ Testing and evaluation days:
 
 1. Preprocessing
    
-Clean column names
-Convert to numeric
-Handle NaN and infinity values
-Normalize and scale data
+- Clean column names
+- Convert to numeric
+- Handle NaN and infinity values
+- Normalize and scale data
 
-3. Feature Selection
-Use permutation importance
-Select top ~20–30 features
-Retrain model with selected features
+2. Feature Selection
+   
+- Use permutation importance
+- Select top ~20–30 features
+- Retrain model with selected features
 
-4. Model Training
-Train Random Forest or XGBoost
-Hyperparameter tuning
-Evaluate on unseen days
-Save metrics and confusion matrix
+3. Model Training
+- Train Random Forest or XGBoost
+- Hyperparameter tuning
+- Evaluate on unseen days
+- Save metrics and confusion matrix
 
-6. Explainability (SHAP)
-Generate SHAP values for test set
-Identify high-influence traffic features
-Export SHAP summaries with model predictions
-Exporting Results to Elasticsearch
+4. Explainability (SHAP)
+- Generate SHAP values for test set
+- Identify high-influence traffic features
+- Export SHAP summaries with model predictions
+- Exporting Results to Elasticsearch
 
-Predictions are exported as JSON documents similar to:
-{
-  "src_ip": "10.0.0.5",
-  "dst_ip": "192.168.0.12",
-  "predicted_label": "Malicious",
-  "true_label": "Benign",
-  "top_shap_features": {
-    "flow_duration": 0.45,
-    "bwd_pkt_len_mean": -0.33,
-    "fwd_iat_std": 0.22
-  }
-}
-These documents are indexed in Elasticsearch for analysis via Kibana.
-
-## Kibana Dashboard
+5. Kibana Dashboard
 The Kibana dashboard includes:
-Alert table (predictions with features)
-Class distribution visualizations
-SHAP feature impact bar charts
-Confusion matrix
-Time-series of alerts
-Feature histograms for malicious flows
+- Alert table (predictions with features)
+- Class distribution visualizations
+- SHAP feature impact bar charts
+- Confusion matrix
+- Time-series of alerts
+- Feature histograms for malicious flows
 
 ---
 
@@ -120,20 +107,20 @@ Import the dashboard or build one directly from your indexed data.
 
 ## Documentation
 Additional documentation:
-Preprocessing walkthrough
-Dataset description
-Elasticsearch mapping
-Dashboard build guide
-SHAP explainability notes
+- Preprocessing walkthrough
+- Dataset description
+- Elasticsearch mapping
+- Dashboard build guide
+- SHAP explainability notes
 
 ---
 
 ## Final Deliverables
 
-Clean feature pipeline
-Trained model + evaluation metrics
-SHAP explainability graphs
-Elasticsearch indexed predictions
-Kibana dashboard
-Final written report
-Fully documented repository
+- Clean feature pipeline
+- Trained model + evaluation metrics
+- SHAP explainability graphs
+- Elasticsearch indexed predictions
+- Kibana dashboard
+- Final written report
+- Fully documented repository
