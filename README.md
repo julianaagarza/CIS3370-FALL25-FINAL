@@ -7,7 +7,7 @@ This project implements a machine learning–based Intrusion Detection System (I
 ---
 
 # Project Overview
-The project contains:
+- The project contains:
 * End-to-end ML pipeline for encrypted traffic detection
 * Data preprocessing and cleaning
 * Feature selection using permutation importance
@@ -62,7 +62,7 @@ Testing and evaluation days:
 - Exporting Results to Elasticsearch
 
 5. Kibana Dashboard
-The Kibana dashboard includes:
+- The Kibana dashboard includes:
 - Alert table (predictions with features)
 - Class distribution visualizations
 - SHAP feature impact bar charts
