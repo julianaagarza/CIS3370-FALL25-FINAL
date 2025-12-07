@@ -28,6 +28,7 @@ The system ingests raw network flows, extracts features, performs multiclass cla
 
 ---
 
+```mermaid
 graph LR
     A[CIC-IDS-2018 Dataset] -->|Raw CSVs| B(Preprocessing & Cleaning)
     B -->|Feature Extraction| C{ML Model}
@@ -35,7 +36,7 @@ graph LR
     C -->|Malicious| E[JSON Alert Generation]
     E -->|Ingestion| F((Elasticsearch))
     F -->|Visualization| G[Kibana Dashboard]
-
+```
 ## Quick Start Guide
 
 Clone the repository:
