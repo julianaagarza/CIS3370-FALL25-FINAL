@@ -7,7 +7,7 @@
 ![Status](https://img.shields.io/badge/Status-Prototype-green.svg)
 
 ## Project Overview
-This project implements an end-to-end **Intrusion Detection System (IDS)** designed to analyze encrypted network traffic in real-time. Unlike traditional signature-based firewalls, this system utilizes **Machine Learning (Random Forest/XGBoost)** to classify traffic patterns based on behavioral flow statistics.
+This project implements an end-to-end **Intrusion Detection System (IDS)** designed to analyze encrypted network traffic in real-time. Unlike traditional signature-based firewalls, this system utilizes **Machine Learning (Random Forest/Logistic Regression)** to classify traffic patterns based on behavioral flow statistics.
 
 The system ingests raw network flows, extracts features, performs multiclass classification across **7 distinct attack families**, and indexes the results into an **ELK Stack (Elasticsearch, Logstash, Kibana)** for live threat monitoring.
 
