@@ -6,14 +6,14 @@
 ![Kibana](https://img.shields.io/badge/Kibana-Visualization-magenta.svg)
 ![Status](https://img.shields.io/badge/Status-Prototype-green.svg)
 
-## 📌 Project Overview
+## Project Overview
 This project implements an end-to-end **Intrusion Detection System (IDS)** designed to analyze encrypted network traffic in real-time. Unlike traditional signature-based firewalls, this system utilizes **Machine Learning (Random Forest/XGBoost)** to classify traffic patterns based on behavioral flow statistics.
 
 The system ingests raw network flows, extracts features, performs multiclass classification across **7 distinct attack families**, and indexes the results into an **ELK Stack (Elasticsearch, Logstash, Kibana)** for live threat monitoring.
 
 ---
 
-## 🚀 Key Capabilities
+## Key Capabilities
 
 * **Unified Multiclass Detection:** A single model capable of distinguishing between:
     * Brute Force (FTP, SSH)
@@ -28,9 +28,6 @@ The system ingests raw network flows, extracts features, performs multiclass cla
 
 ---
 
-## 🛠️ System Architecture
-
-```mermaid
 graph LR
     A[CIC-IDS-2018 Dataset] -->|Raw CSVs| B(Preprocessing & Cleaning)
     B -->|Feature Extraction| C{ML Model}
@@ -43,24 +40,24 @@ graph LR
 
 Clone the repository:
 
-    git clone https://github.com/your-org/your-repo.git
-    cd your-repo
+* git clone https://github.com/your-org/your-repo.git
+* cd your-repo
 
 Open the Colab notebook:
 
-Upload or open `model_training.ipynb` in Google Colab.
+* Upload or open model_training.ipynb in Google Colab.
 
 Install required dependencies:
 
-    !pip install shap elasticsearch pandas numpy scikit-learn xgboost
+* !pip install shap elasticsearch pandas numpy scikit-learn xgboost
 
-Run the preprocessing, feature selection, model training, SHAP explainability, and evaluation steps inside Colab.
+* Run the preprocessing, feature selection, model training, SHAP explainability, and evaluation steps inside Colab.
 
 Export results to Elasticsearch:
 
-    python src/export_to_elasticsearch.py
+* python src/export_to_elasticsearch.py
 
-Open Kibana to view the dashboard and visualizations.
+* Open Kibana to view the dashboard and visualizations.
 
 ---
 
@@ -81,8 +78,7 @@ Pages include:
 - Preprocessing and Feature Engineering  
 - Model Development  
 - Elasticsearch Integration  
-- Kibana Dashboard Guide  
-- SHAP Explainability Notes  
+- Kibana Dashboard Guide
 
 The Wiki contains all detailed instructions, diagrams, walkthroughs, and design decisions.
 
@@ -91,17 +87,17 @@ The Wiki contains all detailed instructions, diagrams, walkthroughs, and design 
 ## Final Deliverables
 
 - Clean data preprocessing and feature pipeline  
-- Trained model and evaluation metrics  
-- SHAP explainability outputs  
-- Elasticsearch indexed predictions  
+- Trained model and evaluation metrics   
+- Elasticsearch indexed predictions
+- .py scripts  
 - Kibana dashboard  
 - Final written report  
 - Fully documented project repository  
 
 ---
 
-## License
+## MIT License
 
 Educational project for CIS 3370: Intrusion Detection Systems.  
-Not intended for production use.
+
 
