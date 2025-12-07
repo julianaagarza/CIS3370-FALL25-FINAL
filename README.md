@@ -42,7 +42,7 @@ graph LR
 Clone the repository:
 
 * git clone https://github.com/your-org/your-repo.git
-* cd your-repo
+* cd CIS3370-FALL25-FINAL
 
 Open the Colab notebook:
 
