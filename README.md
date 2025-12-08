@@ -1,11 +1,6 @@
 # Unified Network Threat Detection System
 ### Real-Time Multiclass Classification using ELK Stack & CSE-CIC-IDS2018
 
-![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
-![Elasticsearch](https://img.shields.io/badge/Elasticsearch-8.0+-yellow.svg)
-![Kibana](https://img.shields.io/badge/Kibana-Visualization-magenta.svg)
-![Status](https://img.shields.io/badge/Status-Prototype-green.svg)
-
 ## Project Overview
 This project implements an end-to-end **Intrusion Detection System (IDS)** designed to analyze encrypted network traffic in real-time. Unlike traditional signature-based firewalls, this system utilizes **Machine Learning (Random Forest/Logistic Regression)** to classify traffic patterns based on behavioral flow statistics.
 
