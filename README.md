@@ -96,4 +96,16 @@ The Wiki contains all detailed instructions, diagrams, walkthroughs, and design 
 
 Educational project for CIS 3370: Intrusion Detection Systems.  
 
+---
+
+---
+
+## Contribution Table
+
+| Team Member | Story Points | Contribution % |
+| :--- | :---: | :---: |
+| Juliana Garza | X | x |
+| Sarah Steadham | x | X |
+| **Total** | **X** | **100%** |
+
 
