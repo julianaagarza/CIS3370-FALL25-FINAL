@@ -87,7 +87,7 @@ The Wiki contains all detailed instructions, diagrams, walkthroughs, and design 
 - Elasticsearch indexed predictions
 - .py scripts  
 - Kibana dashboard  
-- Final written report  
+- Wiki Report 
 - Fully documented project repository  
 
 ---
