@@ -104,8 +104,8 @@ Educational project for CIS 3370: Intrusion Detection Systems.
 
 | Team Member | Story Points | Contribution % |
 | :--- | :---: | :---: |
-| Juliana Garza | X | x |
-| Sarah Steadham | x | X |
-| **Total** | **X** | **100%** |
+| Juliana Garza | 38 | 44% |
+| Sarah Steadham | 48 | 56% |
+| **Total** | **86** | **100%** |
 
 
